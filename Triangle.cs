@@ -12,7 +12,14 @@ class Triangle : Shape
 
         public int Area()
         {
+
             return ( width * height / 2 );
+        }
+
+        public int Omkrets()
+        {
+            
+            return ( height * 3 );
         }
 }
 

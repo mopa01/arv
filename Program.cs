@@ -13,13 +13,21 @@ namespace arv
         int width = int.Parse(Console.ReadLine());
         Console.WriteLine("Height;");
         int height = int.Parse(Console.ReadLine());
-        
 
-        Console.WriteLine ( "Arean För Rectangle; " + width * height + "m²");
 
-        Console.WriteLine("Arean För Triangle; " + width * height / 2 + "m²");
+        Triangle t = new Triangle (width,height); 
 
-        Console.WriteLine("Omkretsen för Triangel; " + width * 3 + "cm");
+        Rectangle r = new Rectangle (width, height);  
+
+
+        Console.WriteLine ( "Arean För Rectangle; " + r.Area() + "m²");
+
+        Console.WriteLine("Arean För Triangle; " + t.Area() + "m²");
+
+        Console.WriteLine ("Omkretsen för Rectangle; " + r.Omkrets() + "m" );
+
+        Console.WriteLine ("Omkretsen för Triangle; " + t.Omkrets() + "m");
+
 
         }
     }
