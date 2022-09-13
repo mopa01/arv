@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 class Shape
 {
-    protected int width;
-    protected int height;
-    protected int area;
-    protected int Circumferance;
+    public int width;
+    public int height;
 
     public Shape(int width, int height)
     {
-        this.width = width;
-        this.height = height;
     }
 }

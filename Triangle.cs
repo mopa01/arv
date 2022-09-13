@@ -8,7 +8,11 @@ class Triangle : Shape
 {
         public Triangle(int width, int height) : base( width, height)
         {
-            Triangle t = new Triangle ()
+        }
+
+        public int Area()
+        {
+            return ( width * height / 2 );
         }
 }
 

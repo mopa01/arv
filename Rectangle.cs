@@ -9,7 +9,6 @@ namespace mopa
     {
         public Rectangle(int width, int height) : base( width, height)
         {
-            Rectangle t= new Rectangle (25,15);
         }
     }
 }
