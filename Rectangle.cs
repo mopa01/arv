@@ -10,13 +10,14 @@ using System.Threading.Tasks;
         {
         }
 
-        public int Area ()
+        public override int Area ()
         {
             return ( width * height);
         }
 
-         public int Omkrets ()
+         public override int Omkretsen ()
         {
             return ( width * 2 + height * 2);
         }
+        
     }

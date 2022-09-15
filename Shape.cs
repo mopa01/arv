@@ -15,4 +15,14 @@ class Shape
         this.width = width;
         this.height = height;
     }
+    
+    public virtual int Area()
+    {
+        return 0;
+    }
+
+    public virtual int Omkretsen()
+    {
+        return 0;
+    }
 }

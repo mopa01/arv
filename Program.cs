@@ -14,21 +14,29 @@ namespace arv
         Console.WriteLine("Height;");
         int height = int.Parse(Console.ReadLine());
 
-
         Triangle t = new Triangle (width,height); 
 
         Rectangle r = new Rectangle (width, height);  
 
+        Console.WriteLine ("Rectangle or Triangle?");
+        String Shape = Console.ReadLine();
 
-        Console.WriteLine ( "Arean För Rectangle; " + r.Area() + "m²");
-
-        Console.WriteLine("Arean För Triangle; " + t.Area() + "m²");
-
-        Console.WriteLine ("Omkretsen för Rectangle; " + r.Omkrets() + "m" );
-
-        Console.WriteLine ("Omkretsen för Triangle; " + t.Omkrets() + "m");
-
-
+        if( Shape == "Rectangle" )
+            {
+                Console.WriteLine("-------------------------------------------------------------------");
+                Console.WriteLine ("Area; "+ r.Area() + "m²");
+                Console.WriteLine ("Omkretsen; " + r.Omkretsen() + "m" );
+                Console.WriteLine("-------------------------------------------------------------------");
+            }
+       
+        if (Shape == "Triangle")
+            {
+                Console.WriteLine("-------------------------------------------------------------------");
+                Console.WriteLine("Arean; " + t.Area() + "m²");
+                Console.WriteLine ("Omkretsen; " + t.Omkretsen() + "m");
+                Console.WriteLine("-------------------------------------------------------------------");
+            }
+        
         }
     }
 }
