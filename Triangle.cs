@@ -12,13 +12,11 @@ class Triangle : Shape
 
         public override int Area()
         {
-
             return ( width * height / 2 );
         }
 
         public override int Omkretsen()
         {
-            
             return ( height * 3 );
         }
 }

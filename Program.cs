@@ -9,34 +9,32 @@ namespace arv
     {
         public static void Main()
         {
+            Shape shape = null;
         Console.WriteLine("Width;");
         int width = int.Parse(Console.ReadLine());
         Console.WriteLine("Height;");
         int height = int.Parse(Console.ReadLine());
 
-        Triangle t = new Triangle (width,height); 
+        //Triangle t = new Triangle (width,height); 
 
-        Rectangle r = new Rectangle (width, height);  
+        //Rectangle r = new Rectangle (width, height);  
 
         Console.WriteLine ("Rectangle or Triangle?");
-        String Shape = Console.ReadLine();
+        string Shape = Console.ReadLine();
 
         if( Shape == "Rectangle" )
             {
-                Console.WriteLine("-------------------------------------------------------------------");
-                Console.WriteLine ("Area; "+ r.Area() + "m²");
-                Console.WriteLine ("Omkretsen; " + r.Omkretsen() + "m" );
-                Console.WriteLine("-------------------------------------------------------------------");
+                shape = new Rectangle (width, height);
             }
        
-        if (Shape == "Triangle")
+        else if (Shape == "Triangle")
             {
-                Console.WriteLine("-------------------------------------------------------------------");
-                Console.WriteLine("Arean; " + t.Area() + "m²");
-                Console.WriteLine ("Omkretsen; " + t.Omkretsen() + "m");
-                Console.WriteLine("-------------------------------------------------------------------");
+                shape = new Triangle (width, height);
             }
-        
+                Console.WriteLine("-------------------------------------------------------------------");
+                Console.WriteLine ("Area; "+ shape.Area() + "m²");
+                Console.WriteLine ("Omkretsen; " + shape.Omkretsen() + "m" );
+                Console.WriteLine("-------------------------------------------------------------------");
         }
     }
 }
