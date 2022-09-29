@@ -4,18 +4,20 @@ using System.Linq;
 using System.Threading.Tasks;
 
 
-    class Rectangle:Shape
+    class Rectangle: IShape
     {
-        public Rectangle(int width, int height) : base( width, height)
+        int width;
+        int height; 
+        public  Rectangle(int width, int height)
         {
         }
 
-        public override int Area ()
+        public int Area ()
         {
             return ( width * height);
         }
 
-         public override int Omkretsen ()
+         public  int Circumferance ()
         {
             return ( width * 2 + height * 2);
         }

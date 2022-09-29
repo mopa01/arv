@@ -4,25 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 
 
-class Shape
+ public interface IShape
 {
-    public int width;
-    public int height;
-
-
-    public Shape(int width, int height)
-    {
-        this.width = width;
-        this.height = height;
-    }
-    
-    public virtual int Area()
-    {
-        return 0;
-    }
-
-    public virtual int Omkretsen()
-    {
-        return 0;
-    }
+    int Area();
+    int Circumferance();
 }

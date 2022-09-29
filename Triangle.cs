@@ -4,18 +4,20 @@ using System.Linq;
 using System.Threading.Tasks;
 
 
-class Triangle : Shape
+class Triangle : IShape
 {
-        public Triangle(int width, int height) : base( width, height)
+    int width;
+    int height; 
+        public Triangle(int width, int height)
         {
         }
 
-        public override int Area()
+        public int Area()
         {
             return ( width * height / 2 );
         }
 
-        public override int Omkretsen()
+        public int Circumferance()
         {
             return ( height * 3 );
         }

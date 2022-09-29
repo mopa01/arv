@@ -9,7 +9,7 @@ namespace arv
     {
         public static void Main()
         {
-            Shape shape = null;
+            IShape shape = null;
         Console.WriteLine("Width;");
         int width = int.Parse(Console.ReadLine());
         Console.WriteLine("Height;");
@@ -33,7 +33,7 @@ namespace arv
             }
                 Console.WriteLine("-------------------------------------------------------------------");
                 Console.WriteLine ("Area; "+ shape.Area() + "m²");
-                Console.WriteLine ("Omkretsen; " + shape.Omkretsen() + "m" );
+                Console.WriteLine ("Omkretsen; " + shape.Circumferance() + "m" );
                 Console.WriteLine("-------------------------------------------------------------------");
         }
     }
